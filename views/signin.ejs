@@ -1,0 +1,55 @@
+<%-include("partials/header")%>
+
+<%-include("partials/nav")%>
+ <link rel="stylesheet" href="/stylesheets/sign.css">
+   <div class="container">
+     <h1>PHOTOSHOOT IS AN ART</h1>
+     <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ducimus quibusdam nemo nihil modi vero voluptas maxime eaque neque, nesciunt possimus dicta quaerat quasi magni laudantium maiores aliquam necessitatibus officiis at voluptatum assumenda veritatis, mollitia aperiam sit. Minus labore alias tempore laborum hic repellendus, consequuntur amet, maxime molestias vitae quo.</h5>
+        <div class="form-box">
+           <h2 id="title">Sign Up</h2>
+           <form action="/signInUp" method="post">
+            <div class="input-group">
+              <div class="input-field" id="namefield">
+                <i class="ri-user-line"></i>
+                <input name="username" type="text" placeholder="Name">
+              </div>
+              <div class="input-field">
+                <i class="ri-mail-line"></i>
+                <input name="email" type="email" placeholder="Email">
+              </div>
+              <div class="input-field">
+                <i class="ri-lock-line"></i>
+                <input name="password" type="password" placeholder="Password">
+              </div>
+              <p>Forget Password<a href="#">Click here</a></p>
+            </div>
+            <div class="btn">
+              <button  value="Signup" type="submit" id="signupbtn">Sign up</button>
+              <button value="signin" type="submit" id="signinbtn" class="disable">Sign in</button>
+
+            </div>
+           </form>
+        </div>
+  </div>
+  <script>
+    let signupbtn = document.getElementById("signupbtn");
+    let signinbtn = document.getElementById("signinbtn");
+    let namefield = document.getElementById("namefield");
+    let title = document.getElementById("title");
+
+    signinbtn.onclick = function(){
+      namefield.style.maxHeight="0";
+      title.innerHTML="Sign In"
+      signupbtn.classList.add("disable");
+      signinbtn.classList.remove("disable");
+
+    }
+    signupbtn.onclick = function(){
+      namefield.style.maxHeight="60px";
+      title.innerHTML="Sign Up"
+      signupbtn.classList.remove("disable");
+      signinbtn.classList.add("disable");
+    }
+
+  </script>
+<%-include("partials/footer")%>

@@ -1,0 +1,83 @@
+<%-include("partials/header")%>
+<link rel="stylesheet" href="/stylesheets/home.css">
+<%-include("partials/nav")%>
+
+<div class="page1">
+   <div class="images">
+    <div class="image image1">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2022/12/Niamh-3-768x1137.jpg" alt="" width="350px">
+    </div>
+    <div class="image image2">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2023/03/Confetti-1st-Edits-8-768x1150.jpeg" alt="" width="350px">
+    </div>
+    <div class="image image3">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2023/03/Confetti-1st-Edits-33-768x1150.jpeg" alt="" width="350px">
+    </div>
+    <div class="image image4">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2017/06/Eimear-1-768x1154.jpg" alt="" width="350px">
+    </div>
+    <div class="image image5">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2021/10/Dave-2-1-768x1151.jpg" alt="" width="350px">
+    </div>
+    <div class="image image6">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2022/12/Eimear-Niall-277-1-768x1154.jpeg" alt="" width="350px">
+    </div>
+    <div class="image image7">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2017/06/Fiona-Dean-871-768x1151.jpeg" alt="" width="350px">
+    </div>
+    <div class="image image8">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2023/03/Confetti-1st-Edits-43-768x1150.jpeg" alt="" width="350px">
+    </div>
+    <div class="image image9">
+      <img src="https://www.niallscullyphotography.com/wp-content/uploads/2022/09/Michelle-Tom-473-scaled-e1663597629283-768x1154.jpeg" alt="" width="350px">
+    </div>
+   </div>
+   <div class="icon">
+    <div class="left">
+        <h2><i class=" icon1 ri-arrow-left-line"></i></h2>        
+    </div>
+    <div class="right">
+      <h2><i class="icon2 ri-arrow-right-line"></i>
+      </div></h2>
+   </div>
+</div>
+
+<div class="page2">
+  <h1>Natural & Elegant <br> Fine Art Wedding & lifestyle <br> photographer</h1>
+  <p>Capturing timeless beauty & emotion</p>
+</div>
+
+<div class="page3">
+  <div class="p3left">
+    <img src="https://static01.nyt.com/images/2023/02/04/obituaries/02Dopkeen1-print3/02Dopkeen1-superJumbo.jpg" alt="" width="300px">
+  </div>
+  <div class="p3right">
+    <h1>Hello!</h1>
+    <h1>Thanks for stopping by!</h1>
+    <br><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum placeat, quos dolor in aliquam vero minus necessitatibus id. Nulla explicabo quos cupiditate, inventore labore perspiciatis facere vel quae totam natus!</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur quis ducimus corporis repellendus sequi facere. Minima at dolorum natus?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+
+</div>
+<script>
+  var iconLeft =  document.querySelector(".icon1");
+var iconRight =  document.querySelector(".icon2");
+var Images = document.querySelector(".images")
+
+var swap = 0;
+iconRight.addEventListener("click",function(){
+    swap = swap+100;
+    Images.scrollTo(swap,0)
+})
+iconLeft.addEventListener("click",function(){
+    swap = swap-100;
+    Images.scrollTo(swap,0)
+   
+})
+
+</script>
+<%-include("partials/footer")%>

@@ -1,0 +1,39 @@
+<%-include("partials/header")%>
+  <%-include("partials/nav")%>
+<link rel="stylesheet" href="/stylesheets/contact.css">
+
+ <div class="page1">
+  <div class="p1left">
+    <img src="https://www.niallscullyphotography.com/wp-content/uploads/2019/03/Danielle-2.jpg" alt="" width="350px">
+  </div>
+  <div class="p1right">
+    <h1>GET IN TOUCH</h1>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis cupiditate sed, sapiente doloribus omnis non corporis accusamus, sunt, similique rem debitis. Saepe, nobis praesentium inventore, repellat natus voluptatem ipsum quisquam enim suscipit labore harum itaque id eveniet doloribus quidem quia!</p>
+      <br><br>
+    <form action="/contactdetails" method="post">
+       <input name="name" type="text" placeholder="YOUR NAME">
+       <br> <br>
+       <input name="phone" type="number" placeholder="PHONE NUMBER">
+       <br> <br>
+       <input name="mail" type="email" placeholder="E-MAIL">
+       <br><br>
+      <textarea name="more" cols="30" rows="5" placeholder="MORE DETAILS"></textarea>
+       <br><br>
+       <select name="place">
+        <option value="">Photoshoot Destination</option>
+        <option value="HAVELOCK ISLAND">Havelock Island</option>
+        <option value="SHIMLA">Shimla</option>
+        <option value="UDAIPUR">Udaipur</option>
+        <option value="MUSSOORIE">Mussoorie</option>
+        <option value="JAISALMER">Jaisalmer</option>
+        <option value="ORCHHA">Orchha</option>
+       </select>
+       <br><br>
+       <button>SEND</button>
+    </form>
+  </div>
+
+ </div>
+
+ <%-include("partials/footer")%>

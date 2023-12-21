@@ -1,0 +1,51 @@
+
+.page1 .images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-top: 5%;
+  }
+  .images::-webkit-scrollbar{
+    display: none;
+  }
+  .page1 .icon {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 10px;
+       padding-top: 1%;
+  }
+  .page1 .icon .left h2,.page1 .icon .right h2 {    
+        border-radius: 50px;
+        border:1px solid black ;
+  }
+  .page2 h1 {
+         text-align: center;
+         font-family: cursive;
+         padding-top: 8%;
+  }
+  .page2 p{
+         text-align: center;
+         font-family: cursive;
+         padding-top: 2%;
+  }
+  .page3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .p3left{
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  .p3right{
+    width: 50%;
+   padding-right: 10%;
+  }
+  .p3right h1{
+    font-size: 40px;
+  }
